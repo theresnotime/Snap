@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "scripts": {
+    "test": "eslint sw.js src/",
+    "fix": "eslint --fix sw.js src/"
+  }
+}

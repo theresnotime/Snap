@@ -3996,12 +3996,12 @@ function implementPluginLibrary(plugins) {
     function isZero_via_sign()     { return sign(this) === 0; }
     function sign_via_compare()    { return compare(this, ZERO); }
 
-    function eq_via_compare(x) { return compare(this, x) === 0; };
-    function ne_via_compare(x) { return compare(this, x) !== 0; };
-    function gt_via_compare(x) { return compare(this, x) > 0; };
-    function lt_via_compare(x) { return compare(this, x) < 0; };
-    function ge_via_compare(x) { return compare(this, x) >= 0; };
-    function le_via_compare(x) { return compare(this, x) <= 0; };
+    function eq_via_compare(x) { return compare(this, x) === 0; }
+    function ne_via_compare(x) { return compare(this, x) !== 0; }
+    function gt_via_compare(x) { return compare(this, x) > 0; }
+    function lt_via_compare(x) { return compare(this, x) < 0; }
+    function ge_via_compare(x) { return compare(this, x) >= 0; }
+    function le_via_compare(x) { return compare(this, x) <= 0; }
 
     function div_R_R(x, y) {
         return (isNegative(y) ? ceiling(divide(x, y)) : floor(divide(x, y)));

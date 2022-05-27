@@ -156,7 +156,7 @@ function loadBlocks (useBigNums) {
                 b = parseNumber(b);
                 if (fn['='](b, '0') && !fn['='](a, '0')) {
                       return (fn['<'](a, '0') ? SchemeNumber('-inf.0') : SchemeNumber('+inf.0'))
-                };
+                }
                 if (Number.isNaN(a) || Number.isNaN(b) || fn['='](b, '0')) return NaN;
                 return fn['/'](a, b);
             },

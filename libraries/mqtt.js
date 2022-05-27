@@ -12711,7 +12711,7 @@ function flow(stream) {
   debug('flow', state.flowing);
 
   while (state.flowing && stream.read() !== null) {
-    ;
+    
   }
 } // wrap an old-style stream as the async data source.
 // This is *not* part of the readable stream interface.
@@ -14787,7 +14787,7 @@ function _normalizeEncoding(enc) {
         retried = true;
     }
   }
-};
+}
 
 // Do not cache `Buffer.isEncoding` when checking encoding names as some
 // modules monkey-patch it to support additional encodings

@@ -196,11 +196,11 @@ SnapExtensions.primitives.set(
           ide.refreshPalette(true);
           break;
       }
-      ;
+      
     } finally {
       ide.savingPreferences = true;
     }
-    ;
+    
   }
 );
 
@@ -222,7 +222,7 @@ SnapExtensions.primitives.set(
   'SciS_indexof(sub,txt)',
   function (sub, txt) {
     return txt.indexOf(sub) + 1;
-    ;
+    
   }
 );
 
@@ -946,7 +946,7 @@ SnapExtensions.primitives.set(
           b = 0;
           s = 255;
         }
-        ;
+        
         if (typeOfData === 'table')
           value = 0;
         for (var ky = 1; ky <= kWidth; ky++)
@@ -1408,7 +1408,7 @@ SnapExtensions.primitives.set(
       for (var i = 1; i <= dim; i++) {
         result = result + (p1.at(i) - p2.at(i)) * (p1.at(i) - p2.at(i));
       }
-      ;
+      
       return Math.sqrt(result);
     }
 
@@ -2105,7 +2105,7 @@ SnapExtensions.primitives.set(
       ctx.beginPath();
       ctx.strokeStyle = lcolor;
       ctx.fillStyle = new Color(datapointattributes.at(4), datapointattributes.at(5), datapointattributes.at(6)).toString();
-      ;
+      
       xp = xTOxp(x - 0.5 * dx);
       yp = yTOyp(0.);
       ctx.moveTo(xp, yp);
